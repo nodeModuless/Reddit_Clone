@@ -13,7 +13,7 @@ export const colors = {
 
 export const lightTheme = {
   background: colors.col4,
-  text: colors.col3,
+  text: colors.col6,
   elements: colors.white,
 };
 
