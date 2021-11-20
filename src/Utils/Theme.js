@@ -20,7 +20,7 @@ export const lightTheme = {
 
 export const darkTheme = {
   text: colors.col4,
-  background: colors.col6,
-  elements: colors.col3,
+  background: colors.col3,
+  elements: colors.col6,
   lightText: colors.col7,
 };

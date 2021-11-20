@@ -15,7 +15,7 @@ export const Global = createGlobalStyle`
 
   body {
     font-family: 'Jost', sans-serif;
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
     transition:.3s all;
+    background: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.text};
   }`;
