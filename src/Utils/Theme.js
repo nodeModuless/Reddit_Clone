@@ -15,10 +15,12 @@ export const lightTheme = {
   background: colors.col4,
   text: colors.col6,
   elements: colors.white,
+  lightText: colors.col7,
 };
 
 export const darkTheme = {
   text: colors.col4,
   background: colors.col6,
   elements: colors.col3,
+  lightText: colors.col7,
 };
