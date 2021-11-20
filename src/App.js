@@ -1,10 +1,11 @@
-import React from "react"
-const App=()=> {
+import React from "react";
+
+const App = () => {
   return (
-    <div >
+    <div>
       <h1>Reddit Clone</h1>
     </div>
   );
-}
+};
 
 export default App;
