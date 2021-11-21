@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "styled-components";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme } from "../Redux/Actions/Theme";
 import Button1 from "./Buttons/Button1";
 import Button2 from "./Buttons/Button2";
 import Button3 from "./Buttons/Button3";
@@ -9,6 +11,9 @@ import Button5 from "./Buttons/Button5";
 
 const Home = () => {
   const theme = useContext(ThemeContext);
+  const dispatch = useDispatch();
+  const { darkmode } = useSelector(({ ThemeReducer }) => ThemeReducer);
+
   return (
     <div>
       <h1
@@ -20,6 +25,16 @@ const Home = () => {
       >
         This is the home page
       </h1>
+      <div>
+        <h1>Reddit Clone</h1>
+        <Button1
+          title="Toggle"
+          onClick={() => dispatch(toggleTheme(!darkmode))}
+        >
+          Toggle
+        </Button1>
+        <Home />
+      </div>
       <Button1 title="Button 1" />
       <Button2 title="Button 2" />
       <Button3 title="Button 3" />
