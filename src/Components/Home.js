@@ -16,17 +16,22 @@ const Home = () => {
 
   return (
     <div>
-      <h1
+      <div
         style={{
-          border: `1.5rem solid ${theme.text}`,
-          width: "40rem",
-          margin: "2rem",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
         }}
       >
-        This is the home page
-      </h1>
-      <div>
-        <h1>Reddit Clone</h1>
+        <h1
+          style={{
+            border: `1.5rem solid ${theme.text}`,
+            width: "40rem",
+            margin: "2rem",
+          }}
+        >
+          This is the home page
+        </h1>
         <span
           style={{
             width: "min-content",
