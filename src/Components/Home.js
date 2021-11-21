@@ -27,13 +27,14 @@ const Home = () => {
       </h1>
       <div>
         <h1>Reddit Clone</h1>
-        <Button1
-          title="Toggle"
+        <span
+          style={{
+            width: "min-content",
+          }}
           onClick={() => dispatch(toggleTheme(!darkmode))}
         >
-          Toggle
-        </Button1>
-        <Home />
+          <Button1 title="Toggle">Toggle</Button1>
+        </span>
       </div>
       <Button1 title="Button 1" />
       <Button2 title="Button 2" />
